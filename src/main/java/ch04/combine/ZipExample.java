@@ -19,6 +19,9 @@ public class ZipExample {
 
         CommonUtils.divSection("zipInterval");
         zipExample.zipInterval();
+
+        CommonUtils.divSection("zipWithNumbers");
+        zipExample.zipWithNumbers();
     }
 
     private void marbleDiagram(){
@@ -55,5 +58,18 @@ public class ZipExample {
         CommonUtils.exampleStart();
         observable.subscribe(Log::it);
         CommonUtils.sleep(1000);
+    }
+
+    private void zipWithNumbers(){
+        Observable<Integer> observable = Observable.zip(
+                Observable.just(100, 200, 300),
+                Observable.just(10, 20, 30),
+                (a, b) -> a + b)
+                .zipWith(
+                        Observable.just(1, 2, 3),
+                        (ab, c) -> ab + c
+                );
+
+        observable.subscribe(Log::i);
     }
 }

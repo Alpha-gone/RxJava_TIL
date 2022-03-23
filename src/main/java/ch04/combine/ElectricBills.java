@@ -91,8 +91,7 @@ public class ElectricBills {
                 (baseP, usageP, usage) -> Pair.of(usage, baseP + usageP)
         );
 
-        observable.map(val -> Pair.of(val.getLeft(),
-                        new DecimalFormat("#,###").format(val.getRight())))
+        observable.map(val -> Pair.of(val.getLeft(), new DecimalFormat("#,###").format(val.getRight())))
                 .subscribe(val -> {
                     StringBuilder sb = new StringBuilder();
                     sb.append("Usage: " + val.getLeft() + "kWh => ");
