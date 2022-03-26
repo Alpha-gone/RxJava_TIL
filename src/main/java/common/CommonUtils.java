@@ -64,7 +64,7 @@ public class CommonUtils {
 		return Integer.parseInt(val);
 	}
 
-	public static void divSection(String str){
-		System.out.println("\n" + "-".repeat(5) + str + "-".repeat(5));
+	public static void divSection(String val){
+		System.out.println("\n" + "-".repeat(5) + val + "-".repeat(5));
 	}
 }
