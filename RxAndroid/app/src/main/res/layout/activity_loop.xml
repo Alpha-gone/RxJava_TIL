@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="Loop"
+            type="com.example.rxandroid.activitys.LoopActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activitys.LoopActivity">
+
+        <TextView
+            android:id="@+id/tvView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnLoop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loop::first::apple"/>
+
+        <Button
+            android:id="@+id/btnLoop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RxLoop 2"/>
+
+        <ListView
+            android:id="@+id/lvLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            />
+
+    </LinearLayout>
+
+</layout>

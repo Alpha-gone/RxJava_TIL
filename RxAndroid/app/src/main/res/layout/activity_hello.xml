@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="helloV1"
+            type="com.example.rxandroid.activitys.HelloActivity" />
+
+        <variable
+            name="helloV2"
+            type="com.example.rxandroid.activitys.HelloActivityV2" />
+
+        <variable
+            name="helloV3"
+            type="com.example.rxandroid.activitys.HelloActivityV3" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activitys.HelloActivity">
+
+        <TextView
+            android:id="@+id/tvView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</layout>

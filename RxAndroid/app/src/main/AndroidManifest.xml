@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxAndroid">
         <activity
-            android:name=".activites.LoopActivity"
+            android:name=".eventListener.OnClickActivity"
             android:exported="false" />
         <activity
-            android:name=".activites.HelloActivityV1"
+            android:name=".activitys.HelloActivityV3"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.LoopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.HelloActivityV2"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.HelloActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

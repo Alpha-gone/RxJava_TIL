@@ -5,43 +5,46 @@
 
     <data>
         <variable
-            name="main"
-            type="com.example.rxandroid.MainActivity" />
+            name="onClick"
+            type="com.example.rxandroid.eventListener.OnClickActivity" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".eventListener.OnClickActivity">
 
         <Button
-            android:id="@+id/btnHelloV1"
+            android:id="@+id/btnClickObserver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="HelloV1" />
+            android:text="Normal"/>
 
         <Button
-            android:id="@+id/btnHelloV2"
+            android:id="@+id/btnClickObserverLambda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="HelloV2" />
+            android:text="Lambda"/>
 
         <Button
-            android:id="@+id/btnLoop"
+            android:id="@+id/btnClickObserverBinding"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="Loop" />
+            android:text="RxBinding"/>
 
         <Button
-            android:id="@+id/btnOnClick"
+            android:id="@+id/btnClickObserverExtra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="OnClick" />
+            android:text="7"/>
 
+        <ListView
+            android:id="@+id/lvLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            />
     </LinearLayout>
 </layout>
