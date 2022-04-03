@@ -10,7 +10,10 @@ import com.example.rxandroid.activitys.HelloActivity;
 import com.example.rxandroid.activitys.HelloActivityV2;
 import com.example.rxandroid.activitys.LoopActivity;
 import com.example.rxandroid.databinding.ActivityMainBinding;
+import com.example.rxandroid.eventListener.DebounceSearchActivity;
+import com.example.rxandroid.eventListener.DebounceSearchActivityV2;
 import com.example.rxandroid.eventListener.OnClickActivity;
+import com.example.rxandroid.eventListener.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding activity_main;
@@ -41,5 +44,20 @@ public class MainActivity extends AppCompatActivity {
            Intent intent = new Intent(getApplicationContext(), OnClickActivity.class);
            startActivity(intent);
        });
+
+        activity_main.btnDebounceSearch.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), DebounceSearchActivity.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnDebounceSearchV2.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), DebounceSearchActivityV2.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnRecyclerView.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), RecyclerViewActivity.class);
+            startActivity(intent);
+        });
     }
 }

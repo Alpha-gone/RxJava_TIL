@@ -43,5 +43,26 @@
             android:textSize="30sp"
             android:text="OnClick" />
 
+        <Button
+            android:id="@+id/btnDebounceSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="OnDebounceSearch" />
+
+        <Button
+            android:id="@+id/btnDebounceSearchV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="OnDebounceSearchV2" />
+
+        <Button
+            android:id="@+id/btnRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="RecyclerView" />
+
     </LinearLayout>
 </layout>

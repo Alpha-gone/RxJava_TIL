@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxAndroid">
         <activity
+            android:name=".eventListener.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".eventListener.DebounceSearchActivityV2"
+            android:exported="false" />
+        <activity
+            android:name=".eventListener.DebounceSearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".eventListener.OnClickActivity"
             android:exported="false" />
         <activity

@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_debounce_search.xml" value="0.3786231884057971" />
+        <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_debounce_search_v2.xml" value="0.2624113475177305" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_hello.xml" value="0.3645833333333333" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_hello_activiry_v1.xml" value="0.24822695035460993" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_hello_activitys.xml" value="0.3292572463768116" />
@@ -12,8 +14,10 @@
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_loop.xml" value="0.24848024316109424" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_main.xml" value="0.17617753623188406" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_on_click.xml" value="0.25329280648429586" />
+        <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_recycler_view.xml" value="0.37318840579710144" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/activity_test.xml" value="0.3292572463768116" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/fragment_on_click.xml" value="0.3786231884057971" />
+        <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/recycler_view_item.xml" value="0.37318840579710144" />
         <entry key="..\:/class/RxJava/RxAndroid/app/src/main/res/layout/textview_log.xml" value="0.25278622087132724" />
       </map>
     </option>
