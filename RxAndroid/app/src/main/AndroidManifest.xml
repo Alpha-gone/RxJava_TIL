@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxAndroid">
         <activity
+            android:name=".activitys.AsyncTaskActivity"
+            android:exported="false" />
+        <activity
             android:name=".eventListener.RecyclerViewActivity"
             android:exported="false" />
         <activity

@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.rxandroid.activitys.AsyncTaskActivity;
 import com.example.rxandroid.activitys.HelloActivity;
 import com.example.rxandroid.activitys.HelloActivityV2;
 import com.example.rxandroid.activitys.LoopActivity;
@@ -57,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
         activity_main.btnRecyclerView.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), RecyclerViewActivity.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnAsyncTask.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), AsyncTaskActivity.class);
             startActivity(intent);
         });
     }

@@ -9,60 +9,74 @@
             type="com.example.rxandroid.MainActivity" />
     </data>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent" >
 
-        <Button
-            android:id="@+id/btnHelloV1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="HelloV1" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
 
-        <Button
-            android:id="@+id/btnHelloV2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="HelloV2" />
+            <Button
+                android:id="@+id/btnHelloV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="HelloV1" />
 
-        <Button
-            android:id="@+id/btnLoop"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="Loop" />
+            <Button
+                android:id="@+id/btnHelloV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="HelloV2" />
 
-        <Button
-            android:id="@+id/btnOnClick"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="OnClick" />
+            <Button
+                android:id="@+id/btnLoop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Loop" />
 
-        <Button
-            android:id="@+id/btnDebounceSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="OnDebounceSearch" />
+            <Button
+                android:id="@+id/btnOnClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="OnClick" />
 
-        <Button
-            android:id="@+id/btnDebounceSearchV2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="OnDebounceSearchV2" />
+            <Button
+                android:id="@+id/btnDebounceSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="OnDebounceSearch" />
 
-        <Button
-            android:id="@+id/btnRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="RecyclerView" />
+            <Button
+                android:id="@+id/btnDebounceSearchV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="OnDebounceSearchV2" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="RecyclerView" />
+
+            <Button
+                android:id="@+id/btnAsyncTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="AsyncTask" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </layout>

@@ -5,8 +5,8 @@
 
     <data>
         <variable
-            name="helloV1"
-            type="com.example.rxandroid.activitys.HelloActivity" />
+            name="asyncTask"
+            type="com.example.rxandroid.activitys.AsyncTaskActivity" />
     </data>
 
     <LinearLayout
