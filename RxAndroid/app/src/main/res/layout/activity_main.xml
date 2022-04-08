@@ -75,6 +75,13 @@
                 android:textSize="30sp"
                 android:text="AsyncTask" />
 
+            <Button
+                android:id="@+id/btnTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Timer" />
+
         </LinearLayout>
 
     </ScrollView>

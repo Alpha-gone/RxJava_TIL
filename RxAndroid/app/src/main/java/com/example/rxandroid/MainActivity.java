@@ -10,6 +10,7 @@ import com.example.rxandroid.activitys.AsyncTaskActivity;
 import com.example.rxandroid.activitys.HelloActivity;
 import com.example.rxandroid.activitys.HelloActivityV2;
 import com.example.rxandroid.activitys.LoopActivity;
+import com.example.rxandroid.activitys.TimerActivity;
 import com.example.rxandroid.databinding.ActivityMainBinding;
 import com.example.rxandroid.eventListener.DebounceSearchActivity;
 import com.example.rxandroid.eventListener.DebounceSearchActivityV2;
@@ -63,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
         activity_main.btnAsyncTask.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), AsyncTaskActivity.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnTimer.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
             startActivity(intent);
         });
     }
