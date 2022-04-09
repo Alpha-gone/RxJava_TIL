@@ -10,12 +10,14 @@ import com.example.rxandroid.activitys.AsyncTaskActivity;
 import com.example.rxandroid.activitys.HelloActivity;
 import com.example.rxandroid.activitys.HelloActivityV2;
 import com.example.rxandroid.activitys.LoopActivity;
+import com.example.rxandroid.activitys.PollingActivity;
 import com.example.rxandroid.activitys.TimerActivity;
 import com.example.rxandroid.databinding.ActivityMainBinding;
 import com.example.rxandroid.eventListener.DebounceSearchActivity;
 import com.example.rxandroid.eventListener.DebounceSearchActivityV2;
 import com.example.rxandroid.eventListener.OnClickActivity;
 import com.example.rxandroid.eventListener.RecyclerViewActivity;
+import com.example.rxandroid.restApi.VolleyActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding activity_main;
@@ -69,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
 
         activity_main.btnTimer.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), TimerActivity.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnPolling.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), PollingActivity.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnVolley.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), VolleyActivity.class);
             startActivity(intent);
         });
     }

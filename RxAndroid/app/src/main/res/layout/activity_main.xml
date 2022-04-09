@@ -82,6 +82,20 @@
                 android:textSize="30sp"
                 android:text="Timer" />
 
+            <Button
+                android:id="@+id/btnPolling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Polling" />
+
+            <Button
+                android:id="@+id/btnVolley"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Volley" />
+
         </LinearLayout>
 
     </ScrollView>
