@@ -18,6 +18,7 @@ public interface GitHubServiceApi {
                                                       @Path("repo") String repo);
 
     @Headers({"Accpet: application/vnd.github.v3.full+json"})
+    @GET("repos/{owner}/{repo}/contributors")
     Call<List<Contributor>> getCallContributorsWithHeader(@Path("owner") String owner,
                                                 @Path("repo") String repo);
 
