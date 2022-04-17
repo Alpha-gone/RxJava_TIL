@@ -14,10 +14,12 @@ import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.ObservableEmitter;
 import io.reactivex.rxjava3.core.ObservableOnSubscribe;
 import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.observers.DisposableObserver;
 
 public class HelloActivity extends AppCompatActivity {
     private ActivityHelloBinding activity_hello;
+    private Disposable disposable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,23 @@ public class HelloActivity extends AppCompatActivity {
             }
         };
 
+        DisposableObserver<String> disposableObserver = new DisposableObserver<String>() {
+            @Override
+            public void onNext(@NonNull String s) {
+                activity_hello.tvView.setText(s);
+            }
+
+            @Override
+            public void onError(@NonNull Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        };
+
         Observable.create(new ObservableOnSubscribe<String>() {
             @Override
             public void subscribe(@NonNull ObservableEmitter<String> emitter) throws Throwable {
@@ -50,5 +69,21 @@ public class HelloActivity extends AppCompatActivity {
             }
         }).subscribe(observer);
 
+        disposable = Observable.create(new ObservableOnSubscribe<String>() {
+            @Override
+            public void subscribe(@NonNull ObservableEmitter<String> emitter) throws Throwable {
+                emitter.onNext("Hello world!");
+                emitter.onComplete();
+            }
+        }).subscribeWith(disposableObserver);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if(!disposable.isDisposed()){
+            disposable.dispose();
+        }
     }
 }

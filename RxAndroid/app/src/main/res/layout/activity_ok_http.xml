@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".square.OkHttpActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+        <variable
+            name="okHttp"
+            type="com.example.rxandroid.square.OkHttpActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".square.OkHttpActivity">
+
+        <Button
+            android:id="@+id/btnRetrofit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="retrofit"/>
+
+        <Button
+            android:id="@+id/btnRetrofitOkHttp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="retrofit + okhttp"/>
+
+        <Button
+            android:id="@+id/btnRetrofitOkHttpRx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="retrofit + okhttp + rxJava"/>
+
+        <ListView
+            android:id="@+id/lvLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            />
+    </LinearLayout>
+
+
+</layout>

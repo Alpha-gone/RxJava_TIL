@@ -5,10 +5,6 @@
 
     <data>
         <variable
-            name="helloV1"
-            type="com.example.rxandroid.activitys.HelloActivity" />
-
-        <variable
             name="helloRx"
             type="com.example.rxandroid.activitys.HelloRxAppActivity" />
     </data>
@@ -17,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".activitys.HelloActivity">
+        tools:context=".activitys.HelloRxAppActivity">
 
         <TextView
             android:id="@+id/tvView"

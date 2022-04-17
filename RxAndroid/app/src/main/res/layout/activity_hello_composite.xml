@@ -5,19 +5,16 @@
 
     <data>
         <variable
-            name="helloV1"
-            type="com.example.rxandroid.activitys.HelloActivity" />
+            name="helloComposite"
+            type="com.example.rxandroid.activitys.HelloCompositeActivity" />
 
-        <variable
-            name="helloRx"
-            type="com.example.rxandroid.activitys.HelloRxAppActivity" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".activitys.HelloActivity">
+        tools:context=".activitys.HelloCompositeActivity">
 
         <TextView
             android:id="@+id/tvView"

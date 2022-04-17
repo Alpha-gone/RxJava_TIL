@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxAndroid">
         <activity
+            android:name=".activitys.HelloCompositeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activitys.HelloRxAppActivity"
+            android:exported="false" />
+        <activity
             android:name=".square.OkHttpActivity"
             android:exported="false" />
         <activity

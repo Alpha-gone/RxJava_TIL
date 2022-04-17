@@ -96,6 +96,20 @@
                 android:textSize="30sp"
                 android:text="Volley" />
 
+            <Button
+                android:id="@+id/btnOkHttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="OkHttp" />
+
+            <Button
+                android:id="@+id/btnRxHello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="RxHello" />
+
         </LinearLayout>
 
     </ScrollView>

@@ -15,7 +15,7 @@ public interface GitHubServiceApi {
 
     @GET("repos/{owner}/{repo}/contributors")
     Observable<List<Contributor>> getObContributors(@Path("owner") String owner,
-                                                      @Path("repo") String repo);
+                                                @Path("repo") String repo);
 
     @Headers({"Accpet: application/vnd.github.v3.full+json"})
     @GET("repos/{owner}/{repo}/contributors")

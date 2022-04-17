@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.example.rxandroid.activitys.AsyncTaskActivity;
 import com.example.rxandroid.activitys.HelloActivity;
 import com.example.rxandroid.activitys.HelloActivityV2;
+import com.example.rxandroid.activitys.HelloRxAppActivity;
 import com.example.rxandroid.activitys.LoopActivity;
 import com.example.rxandroid.activitys.PollingActivity;
 import com.example.rxandroid.activitys.TimerActivity;
@@ -18,6 +19,7 @@ import com.example.rxandroid.eventListener.DebounceSearchActivityV2;
 import com.example.rxandroid.eventListener.OnClickActivity;
 import com.example.rxandroid.eventListener.RecyclerViewActivity;
 import com.example.rxandroid.restApi.VolleyActivity;
+import com.example.rxandroid.square.OkHttpActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding activity_main;
@@ -81,6 +83,16 @@ public class MainActivity extends AppCompatActivity {
 
         activity_main.btnVolley.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), VolleyActivity.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnOkHttp.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), OkHttpActivity.class);
+            startActivity(intent);
+        });
+
+        activity_main.btnRxHello.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), HelloRxAppActivity.class);
             startActivity(intent);
         });
     }
