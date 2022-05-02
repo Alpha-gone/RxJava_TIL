@@ -32,6 +32,10 @@ public class DoOnExample {
 
         CommonUtils.divSection("doOnLifecycle");
         doOnExample.doOnLifecycle();
+
+        CommonUtils.divSection("doOnTerminate");
+        doOnExample.doOnTerminate();
+
     }
 
     private void basic(){
@@ -118,5 +122,15 @@ public class DoOnExample {
         CommonUtils.sleep(200);
         d.dispose();
         CommonUtils.sleep(300);
+    }
+
+    private void doOnTerminate(){
+        String[] orgs= {"1", "3", "5"};
+        Observable<String> observable = Observable.fromArray(orgs);
+
+        observable.doOnTerminate(() -> Log.d("onTerminate()"))
+                .doOnComplete(() -> Log.d("onComplete()"))
+                .doOnError(e -> Log.e("onError()", e.getMessage()))
+                .subscribe(Log::i);
     }
 }
