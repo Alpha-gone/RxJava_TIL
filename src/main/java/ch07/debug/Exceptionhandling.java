@@ -1,9 +1,8 @@
-package ch07;
+package ch07.debug;
 
 import common.CommonUtils;
 import common.Log;
 import io.reactivex.rxjava3.core.Observable;
-import io.reactivex.rxjava3.functions.Consumer;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 
 public class Exceptionhandling {
